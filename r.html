@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Релиз на vesper</title>
+  <meta property="og:title" content="Новый релиз на vesper">
+  <meta property="og:description" content="Слушай и ставь напоминание в приложении vesper">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="release.css">
+</head>
+<body>
+  <main id="release"></main>
+  <script type="module">
+    import { mountRelease } from './release.js';
+    mountRelease(document.getElementById('release'), { big: true });
+  </script>
+</body>
+</html>

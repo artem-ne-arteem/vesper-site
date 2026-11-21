@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>vesper для артистов</title>
+  <meta name="description" content="Загружай треки на vesper с компьютера: релизы, тексты, клипы, статистика и виджеты для твоего сайта.">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="wrap">
+    <header class="top glass">
+      <img src="icon.png" alt="">
+      <div>
+        <div class="brand">vesper</div>
+        <div class="sub">для артистов</div>
+      </div>
+      <div class="spacer"></div>
+      <div class="who" id="who"></div>
+      <button class="btn small" id="signout" hidden>Выйти</button>
+    </header>
+    <main id="app"><div class="row muted"><div class="spin"></div>Загружаю…</div></main>
+  </div>
+
+  <p class="faint" style="position:relative;z-index:1;text-align:center;padding:0 20px 30px">
+    <a href="terms.html">Правила vesper</a> · авторские права и жалобы
+  </p>
+
+  <dialog id="dialog"><div class="glass panel" id="dialog-body"></div></dialog>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

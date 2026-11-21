@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>vesper</title>
+  <link rel="stylesheet" href="release.css">
+  <style>body { background: transparent; }</style>
+</head>
+<body>
+  <main id="release"></main>
+  <script type="module">
+    import { mountRelease } from './release.js';
+    mountRelease(document.getElementById('release'));
+  </script>
+</body>
+</html>
